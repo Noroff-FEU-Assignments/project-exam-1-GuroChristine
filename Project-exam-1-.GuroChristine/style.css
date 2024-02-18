@@ -1,0 +1,194 @@
+header{
+    align-items: center;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .p-menu1{
+     height: 100%;
+  }
+  
+  .hamburger1 {
+    height: 45px;
+    margin: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: left;
+    z-index: 120;
+  }
+  
+  .hamburger1 div {
+    background-color: rgb(61, 61, 61);
+    position: relative;
+    width: 40px;
+    height: 5px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #toggle1 {
+    display: none;
+  }
+  
+  #toggle1:checked + .hamburger1 .top {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    margin-top: 22.5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .meat {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -5px;
+  }
+  
+  #toggle1:checked + .hamburger1 .bottom {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  #toggle1:checked ~ .menu1 {
+    height: 340px;
+  }
+  .menu1 {
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    margin: 0;
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    grid-row-gap: 0,1px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: 25%;
+    text-align: left;
+    height: 0px;
+    overflow: hidden;
+    transition: height .4s ease;
+    z-index: 120;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
+  }
+  
+  .link1 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    font: 700 20px 'Oswald', sans-serif;
+  }
+  
+  .link1:hover {
+    background-color: #fff;
+    color: rgb(193, 190, 190);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: 'open sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  .active {
+    background-color: black;
+    color: hwb(0 100% 0%);
+  }
+  
+  .image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .form__input {
+    display: block;
+  }
+  h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(156, 95, 11);
+    padding: 1rem 1.5rem;
+    margin: 2em;    
+  }
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 1rem 1.5rem;
+    margin: 2em;  
+  }
+  .fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .radio-buttons{
+    display: flex;
+    justify-content: center;
+  }
+  .radio{
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: rgb(2, 2, 2);
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  footer::before,
+  footer::after {
+    color: rgb(198, 200, 105);
+    font-size: 30%;
+  }
+  
+  
+  
